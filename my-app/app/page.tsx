@@ -4,6 +4,7 @@ import SectionDivider from '@/components/Divider/section-divider'
 import AboutMe from '@/components/Sections/about'
 import Projects from '@/components/Sections/projects'
 import Skills from '@/components/Sections/skills'
+import Contacts from '@/components/Sections/contacts'
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
       <SectionDivider/>
       <Projects/>
       <SectionDivider/>
-      <Skills></Skills>
+      <Skills/>
+      {/* <SectionDivider/>
+      <Contacts/> */}
     </main>
   )
 }

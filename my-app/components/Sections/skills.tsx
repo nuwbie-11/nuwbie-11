@@ -5,6 +5,7 @@ import { mySkills } from '@/lib/data';
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import SectionHeading from './section-heading';
+import { motion } from 'framer-motion';
 
 export default function Skills(){
     const {ref, inView} = useInView();
@@ -17,8 +18,18 @@ export default function Skills(){
   
       },[inView,setActiveSection,lastTimeClick]);
     return(
-        <section ref={ref} id="skills" 
-        className="max-w-[53rem] text-center sm:mb-40 scroll-mt-28">
+        <motion.section ref={ref} id="skills" 
+        className="max-w-[53rem] text-center sm:mb-0 scroll-mt-28"
+        initial={{
+            opacity:0,y:100
+        }}
+        animate={{
+            opacity:1,y:0
+        }}
+        transition={{
+            delay:0.1
+        }}
+        >
             <SectionHeading>My Skills</SectionHeading>
             <ul className="flex flex-wrap justify-center gap-2 text-lg text-zinc-800">
                 {
@@ -30,6 +41,6 @@ export default function Skills(){
                 }
 
             </ul>
-        </section>
+        </motion.section>
     )
 }
