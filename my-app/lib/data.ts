@@ -14,7 +14,7 @@ const fbPage = furrPic;
 const analyticsPic = analytic101;
 
 export const mySkills = [
-    "HTML","CSS","JS","Python","Flutter","Data Analytics","Data Science","Data Visualization","Machine Learning Engineer","Ms. Excel","Ms. Word"
+    "HTML","CSS","JS","ReactJs","NextJs","Python","Flutter","Data Analytics","Data Science","Data Visualization","Machine Learning Engineer","Ms. Excel","Ms. Word"
 ]
 
 export const projectsData = [
