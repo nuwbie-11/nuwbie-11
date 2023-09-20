@@ -23,7 +23,7 @@ export default function ProjectItem({
     const opacityTransfrom = useTransform(scrollYProgress,[0, 1],[0.2, 1])
   return (
     <motion.div
-    className="mb-3 sm:mb-8 last:mb-0 group"
+    className="mb-3 sm:mb-8 last:mb-10 group"
     ref={ref}
     style={
         {
@@ -34,8 +34,8 @@ export default function ProjectItem({
     >
 
         <section  className=" bg-zinc-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 rounded-lg relative 
-        mb-3 sm:mb-8 last:mb-0  hover:bg-zinc-200 transition group-even:pl-8">
-            <div className="pt-4 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[19rem]">
+        mb-3 sm:mb-8 last:mb-0  hover:bg-zinc-200 transition group-even:pl-8 sm:h-[25rem] w-[80vw]">
+            <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-0 md:group-even:ml-[18rem]">
 
                 <h3 className="font-semibold text-base md:text-2xl">{title}</h3>
                 <p className="mt-2 leading-relaxed text-zinc-700 mb-4">{description}</p>
@@ -51,7 +51,7 @@ export default function ProjectItem({
                 </ul>
 
                 <Image
-                    className="absolute top-8 -right-40 w-[28rem] rounded-t-lg shadow-2xl 
+                    className="absolute hidden sm:block  top-8 -right-40 w-[9rem] md:w-[28rem] rounded-t-lg shadow-2xl 
                     group-even:right-[initial] 
                     group-even:-left-40 
                     

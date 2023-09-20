@@ -78,11 +78,11 @@ export default function Hero() {
         delay:0.15
       }}
       >
-        <Link className="cursor-pointer group bg-zinc-800 text-zinc-50 px-3 sm:px-7 py-3 flex items-center gap-2 rounded sm:rounded-full outline-none 
-        focus:scale-110 hover:scale-110 hover:bg-zinc-950 transition active:scale-105" href="mailto:adwityasadhu@yahoo.co.id">
+        <a className="cursor-pointer group bg-zinc-800 text-zinc-50 px-3 sm:px-7 py-3 flex items-center gap-2 rounded sm:rounded-full outline-none 
+         hover:scale-110 hover:bg-zinc-950 transition" href="mailto:adwityasadhu@yahoo.co.id">
             <span className="hidden sm:block">Contact Me Here</span><BsArrowRight className="group-hover:translate-x-2 transition hidden sm:block"/> 
             <BsEnvelope className="block sm:hidden"/> {" "}
-        </Link>
+        </a>
         <a href="/CV-New.pdf" className="cursor-pointer group flex items-center gap-2 px-5 py-3 text-zinc-950 rounded-full shadow-lg shadow-black/[0.3rem] bg-zinc-100
         outline-none focus:scale-110 hover:scale-110 hover:bg-zinc-50 transition active:scale-105" download={true}>
             <span className="hidden sm:block">Download CV</span> <HiDownload className="group-hover:translate-y-[0.187rem] transition" />
