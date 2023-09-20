@@ -1,7 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Navbar from './components/Navbar/navbar'
+import Navbar from '../components/Navbar/navbar'
+import ActiveSectionContextProvider from '@/context/active-session'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,11 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-zinc-50 text-zinc-950 ${inter.className} h-[1000px]`}>
+      <body className={`bg-zinc-50 text-zinc-950 ${inter.className}`}>
         <div className="absolute rounded-full -z-20 bg-pink-300 w-[32rem] h-[32rem] top-[-6.3rem] right-[11rem] blur-[20rem] sm:w-[62rem]"></div>
         <div className="absolute rounded-full -z-20 bg-sky-200 w-[32rem] h-[32rem] top-[-1rem] left-[-35rem] blur-[20rem] sm:w-[62rem] "></div>
-        <Navbar></Navbar>
-        {children}
+        
+        <ActiveSectionContextProvider>
+          <Navbar/>
+          {children}
+        </ActiveSectionContextProvider>
 
       </body>
     </html>
