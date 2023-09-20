@@ -77,4 +77,8 @@ export const Links = [
         name: "Skills",
         targetHash: "#skills",
     },
+    // {
+    //     name: "Contacts",
+    //     targetHash: "#contacts",
+    // },    
 ] as const;

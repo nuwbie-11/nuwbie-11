@@ -79,7 +79,7 @@ export default function Hero() {
       }}
       >
         <Link className="cursor-pointer group bg-zinc-800 text-zinc-50 px-3 sm:px-7 py-3 flex items-center gap-2 rounded sm:rounded-full outline-none 
-        focus:scale-110 hover:scale-110 hover:bg-zinc-950 transition active:scale-105" href={""}>
+        focus:scale-110 hover:scale-110 hover:bg-zinc-950 transition active:scale-105" href="mailto:adwityasadhu@yahoo.co.id">
             <span className="hidden sm:block">Contact Me Here</span><BsArrowRight className="group-hover:translate-x-2 transition hidden sm:block"/> 
             <BsEnvelope className="block sm:hidden"/> {" "}
         </Link>
