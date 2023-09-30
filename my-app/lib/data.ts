@@ -4,7 +4,7 @@ import lihatinPic from "@/lib/LihatIn_Logo.png"
 import goRestPic from "@/lib/Go-Restaurant.png"
 import furrPic from "@/lib/Furrball Facts.png"
 import analytic101 from "@/lib/analytics101.png"
-
+import fakeNewsImg from "@/lib/fakeNews.png"
 
 export const profPic = pfp;
 const fqLogo = farmqowPic;
@@ -57,6 +57,14 @@ export const projectsData = [
         techs : ["Python","Pandas","SQL","Excel","LookrStudio"],
         imageUrl : analyticsPic,
         gitURL:"https://github.com/nuwbie-11/Data-Analytics/"
+    },
+    {
+        title: "Fake News Detection",
+        description:
+            "An App to Detect Wheter the News is Fake or a Real Ones based on its Article",
+        techs : ["Python","Pandas","Scikit-Learn","NLP","Flask"],
+        imageUrl : fakeNewsImg,
+        gitURL:"https://github.com/nuwbie-11/Fake-News-Detection"
     },
     
 ];
