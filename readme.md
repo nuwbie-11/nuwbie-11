@@ -5,6 +5,6 @@
 👋 Hi, I’m [nuwbie-11](https://github.com/nuwbie-11)  
 🧠 I’m passionate about AI, web development, and datas  
 🤝 Looking to collaborate on dev tools & cool projects  
-📧 Reach me at: [adwityasadhu@gmail.com](mailto:adwityasadhu@gmail.com)
+📧 Reach me at: [adwityasadhu@gmail.com](mailto:adwityasadhu@yahoo.com)
 
 ---
